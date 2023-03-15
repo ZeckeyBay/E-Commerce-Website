@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: lightgray;
+    background: lightblue;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);    
     z-index: 999;
     position: sticky;
@@ -95,7 +95,7 @@
 
 #navbar li a:hover,
 #navbar li a.active{
- color: #088178;
+ color: #100881;
 }
 
 #navbar li a.active::after,
@@ -103,7 +103,7 @@
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: #100881;
   position: absolute;
   bottom: -4px;
   left: 25px;
@@ -138,26 +138,35 @@
 }
 
 #hero h1{
-  color: #088178;
+  color: #100881;
+}
+#hero p{
+  font-size: 20px;
+  color: #1a1a1a;
 }
 
 #hero button{
-  background-color: #088178;
+  background-color: #100881;
   color: white;
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
   border: 0;
   font-weight: 700;
-  font-size: 14px
+  font-size: 18px
 }
+#hero button:hover{
+  color: #100881;
+  background-color: #fff;
+}
+
 
 #feature{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: rgb(48, 68, 110);
 }
 
 #feature .fe-box{
@@ -185,7 +194,7 @@
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
-  color: #088178;
+  color: #100881;
   background-color: #fddde4;
 }
 
@@ -207,6 +216,7 @@
 
 #product1{
   text-align: center;
+  background-color: lightblue;
 }
 
 #product1 .pro-container{
@@ -220,6 +230,7 @@
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
+  background-color: rgb(48, 68, 110);
   border: 1px solid #cce7d0;
   border-radius: 25px;
   cursor: pointer;
@@ -244,13 +255,13 @@
 }
 
 #product1 .pro .des span{
-  color: #606063;
+  color: #c6d314;
   font-size: 16px;
 }
 
 #product1 .pro .des h5{
   padding-top: 7px;
-  color: #1a1a1a;
+  color: #129cbe;
   font-size: 18px;
 }
 
@@ -258,7 +269,7 @@
   padding-top: 7px;
   font-size: 18px;
   font-weight: 700;
-  color: #088178;
+  color: #12be3d;
 }
 
 #product1 .pro .cart{
@@ -268,7 +279,7 @@
   border-radius: 50px;
   background-color: #e8f6ea;
   font-weight: 500;
-  color: #088178;
+  color: #100881;
   border: 1px solid #cce7d0;
   position: absolute;
   bottom: 20px;
@@ -281,31 +292,31 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("images/features/footer");
+  background-color: lightblue;
+  background-image: url("images/features/bottombanner.jpg");
   width: 100%;
-  height: 60vh;
-  background-position: 50% 30%;
-  background-size: 100% 120%;
+  height: 40vh;
+  background-position: 40% 40%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 #banner h2{
+  color: #cce7d0;
   font-size: 40px;
   padding: 10px 0;
-  margin-left: 350px;
+  margin-bottom: 20px;
 }
 #banner h2 span{
   color: #ef3636;
 }
 #explore{
-  margin-left: 350px;
-  margin-bottom: 100px;
-  background: #088178;
+  background: #100881;
   color: white;
 }
 #explore:hover{
   background: white;
-  color: #088178;
+  color: #100881;
 }
 
 /* Shop Page */
@@ -320,6 +331,7 @@
   text-align: center;
   flex-direction: column;
   padding: 14px;
+  
 }
 #page-header h2,
 #page-header h1,
@@ -328,16 +340,22 @@
 }
 
 #pagination{
+  background-color: lightblue;
   text-align: center;
 }
 #pagination a{
   text-decoration: none;
-  background-color: #088178;
+  background-color: #100881;
   padding: 15px 20px;
   border-radius: 4px;
   color: white;
   font-weight: 600;
 }
+#pagination a:hover{
+  background-color: #fff;
+  color: #100881;
+}
+
 #pagination a i{
   font-size: 16px;
   font-weight: 600;
@@ -356,7 +374,7 @@
 #page-footer h2,
 #page-footer h1,
 #page-footer p{
-  color: white;
+  color: #cce7d0;
 }
 
 /* Contact Page */
@@ -415,7 +433,7 @@
 }
 
 #form-details form button{
-  background-color: #088178;
+  background-color: #100881;
   color: white;
 }
 
@@ -460,7 +478,7 @@
 }
 
 #prodetails .single-pro-details button{
-  background-color: #088178;
+  background-color: #100881;
   color: white;
 }
 
@@ -544,7 +562,7 @@
   font-size: 13px;
 }
 #subtotal button{
-  background-color: #088178;
+  background-color: #100881;
   color: white;
   padding: 12px 20px;
 }
