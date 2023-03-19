@@ -229,7 +229,7 @@
 #product1 .pro{
   width: 23%;
   min-width: 250px;
-  padding: 10px 12px;
+  padding: 10px 12px 0px 12px;
   background-color: rgb(48, 68, 110);
   border: 1px solid #cce7d0;
   border-radius: 25px;
@@ -237,10 +237,6 @@
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
-}
-
-#product1 .pro:hover{
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
 #product1 .pro img{
@@ -271,6 +267,46 @@
   color: #12be3d;
 }
 
+#quantity-container{
+  position: relative;
+  display: flex;
+  justify-content:flex-end;
+  font-weight: 900;
+}
+#quantity-container .quantity{
+ color: #ffd20b;
+ margin-right: 5px;
+ margin-top: 2px;
+}
+.bi-dash-lg{
+  color: rgb(255, 0, 0);
+  background-color: black;
+  border: 1px solid rgb(255, 0, 0);
+  line-height: 20px;
+  margin-right: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.bi-dash-lg:hover{
+  cursor: pointer;
+}
+.bi-plus-lg{
+  color:#3bf569;
+  background-color: black;
+  border: 1px solid #3bf569;
+  line-height: 20px;
+  margin-right: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.bi-plus-lg:hover{
+  cursor: pointer;
+}
+
 #product1 .pro .cart{
   width: 40px;
   height: 40px;
@@ -281,8 +317,8 @@
   color: #100881;
   border: 1px solid #cce7d0;
   position: absolute;
-  bottom: 20px;
-  right: 10px;
+  bottom: 55px;
+  right: 16px;
 }
 
 #banner{
