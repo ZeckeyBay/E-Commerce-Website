@@ -74,6 +74,7 @@
   }
 
 #navbar{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +84,17 @@
   position: relative;
   list-style: none;
   padding: 0 20px;
+}
+
+.cartAmount{
+  position: absolute;
+  top: -9px;
+  right: 0px;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
 }
 
 #navbar li a{
@@ -594,6 +606,16 @@
   #mobile .cart{
     font-size: 20px;
   }
+  #mobile .cartAmount{
+    z-index: -5;
+    position: absolute;
+    top: 25px;
+    right: 110px;
+  }
+  #navbar .cartAmount{
+    top: 200px;
+    right: 207px;
+  }
 
   #close{
     display: initial;
@@ -626,6 +648,18 @@
   h1{
     font-size: 38px;
   }
+  
+  #navbar .cartAmount{
+    top: 200px;
+    right: 207px;
+  }
+  #mobile .cartAmount{
+    z-index: -5;
+    position: absolute;
+    top: 17px;
+    right: 60px;
+  }
+
   #hero{
     padding: 0 20px;
     background-position: 55%;
