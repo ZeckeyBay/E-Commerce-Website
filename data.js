@@ -70,4 +70,4 @@ let shopItemsData = [{
     name:"Women Navy-Blue Jeans",
     price:220,
     img:"images/products/trousers/w-navyblue-jeans"
-},]
+},];
