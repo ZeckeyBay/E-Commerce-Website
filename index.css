@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: lightblue;
+    background: rgb(48, 68, 110);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);    
     z-index: 999;
     position: sticky;
@@ -101,13 +101,13 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: white;
   transition: 0.3s ease;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
- color: #100881;
+ color: lightblue;
 }
 
 #navbar li a.active::after,
@@ -115,7 +115,7 @@
   content: "";
   width: 30%;
   height: 2px;
-  background: #100881;
+  background: lightblue;
   position: absolute;
   bottom: -4px;
   left: 25px;
@@ -228,7 +228,9 @@
 
 #product1{
   text-align: center;
-  background-color: lightblue;
+}
+#product1 h2,p{
+  color: #100881;
 }
 
 #product1 .pro-container{
@@ -383,7 +385,7 @@
 #page-header h2,
 #page-header h1,
 #page-header p{
-  color: white;
+  color: #cce7d0;
 }
 
 #pagination{
@@ -429,7 +431,7 @@
 .contact-header{
   background-image: url("images/features/contactbanner.png");
   width: 100%;
-  height: 40vh;
+  height: 20vh;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -441,7 +443,7 @@
 .contact-header h2,
 .contact-header h1,
 .contact-header p{
-  color: white;
+  color: #cce7d0;
 }
 
 #form-details{
@@ -483,6 +485,10 @@
   background-color: #100881;
   color: white;
 }
+#form-details form button:hover{
+  background-color: #e1e1e1;
+  color: #100881;
+}
 
 
 /* Cart Page */
@@ -491,6 +497,9 @@
   border-collapse: collapse;
   table-layout: fixed;
   white-space: nowrap;
+}
+.bi-x-circle{
+  font-size: 22px
 }
 #cart table img{
   width: 70px;
@@ -527,15 +536,28 @@
 #cart table thead td{
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 18px;
   padding: 18px 0;
 }
 #cart table tbody tr td{
   padding-top: 15px;
 }
 #cart table tbody td{
-  font-size: 13px;
+  font-size: 15px;
 }
+
+#cart-quantity-container{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  font-weight: 900;
+  margin-top: 15px;
+}
+#cart-quantity-container .quantity{
+  color: #1a1a1a;
+  margin-right: 5px;
+  margin-top: 2px;
+ }
 
 #subtotal{
   width: 50%;
@@ -562,13 +584,18 @@
   width: 50%;
   border: 1px solid #e2e9e1;
   padding: 10px;
-  font-size: 13px;
+  font-size: 16px;
 }
 #subtotal button{
   background-color: #100881;
   color: white;
   padding: 12px 20px;
 }
+#subtotal button:hover{
+  background-color: #cce7d0;
+  color: #100881;
+}
+
 /* Media Query Section */
 
 @media (max-width:799px){

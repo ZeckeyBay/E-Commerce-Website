@@ -52,6 +52,7 @@ let decrement = (id) =>{
         search.item -= 1;
     }
     update(selectedItem.id);
+    basket = basket.filter((x) => x.item !== 0); // delete item when its 0 from local storage
     localStorage.setItem("data",JSON.stringify(basket));
 };
 
@@ -59,7 +60,7 @@ let update = (id) =>{
     let search = basket.find((x)=>x.id === id);
     document.getElementById(id).innerHTML = search.item;
     calculation();
-}
+};
 
 let calculation = () =>{
     let cartIcon = document.getElementById("cartAmount");
