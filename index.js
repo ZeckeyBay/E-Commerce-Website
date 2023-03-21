@@ -20,43 +20,43 @@ let generateShop = () =>{
                 <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
                 <a href="#" onclick="window.location.href='cart.html';"><i class="bi bi-cart2 cart"></i></a>
             </div>
-        </div> `
+        </div> `;
+        
     }).join(""));
 };
 generateShop();
 
 let increment = (id) =>{
-    let search = basket.find((x)=>x.id === id);
+    let selectedItem = id;
+    let search = basket.find((x)=>x.id === selectedItem.id);
 
     if(search === undefined){
         basket.push({
-            id: id,
+            id: selectedItem.id,
             item: 1
         });
     } else {
         search.item += 1;
     }
-    update(id);
+    update(selectedItem.id);
     localStorage.setItem("data",JSON.stringify(basket));
-    console.log(basket)
 };
 
 let decrement = (id) =>{
-    let search = basket.find((x)=>x.id === id);
+    let selectedItem = id;
+    let search = basket.find((x)=>x.id === selectedItem.id);
 
     if (search === undefined) return;
     else if (search.item === 0) return;
     else {
         search.item -= 1;
     }
-    update(id);
+    update(selectedItem.id);
     localStorage.setItem("data",JSON.stringify(basket));
-    console.log(basket)
 };
 
 let update = (id) =>{
     let search = basket.find((x)=>x.id === id);
-    console.log(search.item)
     document.getElementById(id).innerHTML = search.item;
     calculation();
 }
