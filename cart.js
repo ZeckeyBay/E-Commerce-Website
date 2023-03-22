@@ -1,6 +1,7 @@
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 let ShoppingCart = document.getElementById("cart");
 let label = document.getElementById("label");
+let shopItemsDatas = shopItemsData.concat(shopItemsData2);
 
 let calculation = () =>{
     let cartIcon = document.getElementById("cartAmount");
@@ -12,7 +13,7 @@ let generateCartItems = ()=>{
     if(basket.length !== 0){
         return (ShoppingCart.innerHTML = basket.map((x)=>{
             let {id,item} = x;
-            let search = shopItemsData.find((y) => y.id === id) || [];
+            let search = shopItemsDatas.find((y) => y.id === id) || [];
             return `
             <table width="100%">
             <thead>
@@ -30,7 +31,7 @@ let generateCartItems = ()=>{
                     <td><a href="#"><i onclick="removeItem(${id})" class="bi bi-x-circle"></i></a></td>
                     <td><img src="${search.img}"></td>
                     <td>${search.name}</td>
-                    <td>${search.price}</td>
+                    <td>$${search.price}</td>
                     <td>
                     <div id="cart-quantity-container">
                     <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
@@ -58,6 +59,16 @@ let generateCartItems = ()=>{
                 </tr>
             </thead>
         <table>`
+        label.innerHTML = `
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Total : $0</td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to checkout</button>
+            </div>`
     }
 };
 generateCartItems();
@@ -114,7 +125,7 @@ let totalAmount = () =>{
     if(basket.length !== 0){
         let amount = basket.map((x)=>{
             let {item,id} = x;
-            let search = shopItemsData.find((y) => y.id === id) || [];
+            let search = shopItemsDatas.find((y) => y.id === id) || [];
             return item * search.price;
         }).reduce((x,y)=> x+y,0);
         label.innerHTML = `

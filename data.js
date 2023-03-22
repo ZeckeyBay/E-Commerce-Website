@@ -71,3 +71,53 @@ let shopItemsData = [{
     price:220,
     img:"images/products/trousers/w-navyblue-jeans"
 },];
+
+let shopItemsData2 = [{
+    id:"asdasfghfgh",
+    brand:"Zenith",
+    name:"Black Beret",
+    price:30,
+    img:"images/products/shop2/black-beret.jfif"
+},{
+    id:"asdashjl",
+    brand:"Zenith",
+    name:"Orange Coat",
+    price:250,
+    img:"images/products/shop2/orange-coat.jfif"
+},{
+    id:"asdrtyrt",
+    brand:"Zenith",
+    name:"Blue Shoulder Bag",
+    price:40,
+    img:"images/products/shop2/blue-shoulder-bag.jfif"
+},{
+    id:"asdafasf",
+    brand:"Zenith",
+    name:"RPink Backpack",
+    price:220,
+    img:"images/products/shop2/pink-backpack.jfif"
+},{
+    id:"asdaasfh",
+    brand:"Zenith",
+    name:"Red Swim Trunk",
+    price:25,
+    img:"images/products/shop2/red-swimming-trunk.jfif"
+},{
+    id:"aswretrte",
+    brand:"Zenith",
+    name:"Red Coat",
+    price:250,
+    img:"images/products/shop2/red-coat.jfif"
+},{
+    id:"asdaagfsd",
+    brand:"Zenith",
+    name:"White Hat",
+    price:60,
+    img:"images/products/shop2/white-hat.jfif"
+},{
+    id:"asdaaxcvxc",
+    brand:"Zenith",
+    name:"Black Backpack",
+    price:230,
+    img:"images/products/shop2/black-backpack.jfif"
+},];
