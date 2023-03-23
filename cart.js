@@ -15,35 +15,35 @@ let generateCartItems = ()=>{
             let {id,item} = x;
             let search = shopItemsDatas.find((y) => y.id === id) || [];
             return `
-            <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#"><i onclick="removeItem(${id})" class="bi bi-x-circle"></i></a></td>
-                    <td><img src="${search.img}"></td>
-                    <td>${search.name}</td>
-                    <td>$${search.price}</td>
-                    <td>
-                    <div id="cart-quantity-container">
-                    <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
-                    <div id=${id} class="quantity">${item}</div>
-                    <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
-                    </div>
-                    </td>
-                    <td>$${item*search.price}</td>
-                </tr>
-            </tbody>
-        </table>
-            `
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Remove</td>
+                            <td>Image</td>
+                            <td>Product</td>
+                            <td>Price</td>
+                            <td>Quantity</td>
+                            <td>Total</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#"><i onclick="removeItem(${id})" class="bi bi-x-circle"></i></a></td>
+                            <td><img src="${search.img}"></td>
+                            <td>${search.name}</td>
+                            <td>$${search.price}</td>
+                            <td>
+                            <div id="cart-quantity-container">
+                            <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+                            <div id=${id} class="quantity">${item}</div>
+                            <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+                            </div>
+                            </td>
+                            <td>$${item*search.price}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    `
         }).join(""));
     } else{
         ShoppingCart.innerHTML = `
